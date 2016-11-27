@@ -32,8 +32,8 @@ to this as a *split* server architecture.
 Simply add the following `script` tags to each HTML file.  
 
 ```javascript
-	<script type="text/javascript" src="path/to/hyp3rarmor-config.js"></script>
-	<script type="text/javascript" src="path/to/hyp3rarmor.js"></script>
+<script type="text/javascript" src="path/to/hyp3rarmor-config.js"></script>
+<script type="text/javascript" src="path/to/hyp3rarmor.js"></script>
 ```
 ## Single Server Architecture 
 
@@ -46,7 +46,7 @@ requested resource not existing on the visible server.
 3. Apply the following JavaScript block to all files hosted on the  [hidden server](https://github.com/wil3/hyp3rarmor-server) to change the [origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) thus allowing the JavaScript hosted on the visible server to modify the DOM served by the hidden server.  
 
 ```javascript
-		<script type="text/javascript">
-		document.domain = 'company.com'
-		</script>
+<script type="text/javascript">
+document.domain = 'company.com'
+</script>
 ```
